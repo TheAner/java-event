@@ -2,7 +2,7 @@
 
 This project is Angular web application created for PJATK SSW pass.\
 The topic of this site is ***java event***.\
-Angular is used only for **flex**
+Angular is used only to **flex**
 
 
 ##Author
