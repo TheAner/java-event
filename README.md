@@ -8,6 +8,9 @@ Angular is used only to **flex**
 ##Author
 Adrian Sowiński (**TheAner**) - s20603
 
+## Demo
+Demo is running [here](https://project.theaner.pl)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
