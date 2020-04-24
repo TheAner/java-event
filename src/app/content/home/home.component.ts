@@ -12,8 +12,8 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.countdown = this.getTimeRemaining(new Date('Apr 26, 2020'));
-    this.initializeClock(new Date('Apr 26, 2020'));
+    this.countdown = this.getTimeRemaining(new Date('May 26, 2020'));
+    this.initializeClock(new Date('May 26, 2020'));
   }
 
   initializeClock(endtime){

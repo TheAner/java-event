@@ -1,0 +1,26 @@
+div{
+  .fixed-text {
+    position: absolute;
+    top: 25%;
+    color: whitesmoke;
+    text-shadow: 0 0 4px black;
+    text-align: center;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
+
+  .text-container {
+    display: flex;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/seminar.jpg') no-repeat center;
+    background-size: cover;
+    position: relative;
+    height: calc(100vh - 113px);
+    width: 100%;
+  }
+}
+
+.colored{
+  color: #ee9810;
+  font-weight: bold;
+}

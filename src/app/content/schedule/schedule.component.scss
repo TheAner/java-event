@@ -1,0 +1,26 @@
+div{
+  padding: 10px;
+
+  .colored{
+    color: #ee9810;
+  }
+
+  .col-2, .col-4, .col-10{
+    font-weight: 600;
+  }
+
+  .split{
+    background: #fbf7f6;
+    color: lightslategrey;
+    border-radius: 10px;
+
+    .col-10{
+      text-align: left;
+    }
+  }
+
+  .row{
+    padding: 1em;
+    margin: 1em;
+  }
+}

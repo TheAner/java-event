@@ -1,7 +1,18 @@
-<div class="jumbotron jumbotron-fluid">
-  <div class="d-flex flex-column align-items-center">
-    <h1 class="display-4">{{countdown.days}} dni {{ countdown.hours }}:{{countdown.minutes}}:{{countdown.seconds }}</h1>
-    <p class="lead">Nie czekaj i zarejestruj się</p>
-    <button class="btn btn-warning p-3" routerLink="/register">ZAPISZ SIĘ TERAZ</button>
+<div class="d-flex flex-column">
+  <div class="text-container justify-content-center">
+    <div class="fixed-text text-center">
+      <div>
+        <h1 class="display-4" *ngIf="countdown.days != '00'">
+          {{countdown.days}} {{countdown.days != '01' ? 'dni' : 'dzień'}}
+        </h1>
+        <h1 class="display-4">
+          {{ (countdown.days != '00' && countdown.hours != '00') ? countdown.hours + ':' : ''}}{{ countdown.minutes }}:{{ countdown.seconds }}
+        </h1>
+      </div>
+      <span class="lead font-weight-bold p-3 colored">25.05.2020r.</span>
+      <p class="lead font-weight-bold p-3">Nie czekaj i kup bilet na największy Javowy event!</p>
+      <button class="btn btn-warning p-3" routerLink="/register">KUP BILET</button>
+    </div>
   </div>
 </div>
+<app-quiz></app-quiz>

@@ -1,0 +1,39 @@
+<div class="d-flex flex-column justify-content-center align-items-center text-center quiz-container">
+  <div>
+    <h4>Zanim jednak odbędzie się nasz event</h4>
+    <h5>spróbuj się w naszym quizie</h5>
+  </div>
+  <div *ngIf="lastScore>=0" class="d-flex flex-column p-2 font-weight-bold">
+    <span>Ostatnio zdobyłeś {{lastScore}}/{{quiz.length}}pkt.</span>
+    <span>Możesz spróbować jeszcze raz!</span>
+  </div>
+  <div class="mt-3">
+    <button class="btn btn-warning p-3" (click)="openModal(template)">
+      SPRAWDŹ
+    </button>
+  </div>
+  <ng-template #template>
+    <div class="modal-header bg-light">
+      <h4 class="modal-title">JavaEventQuiz</h4>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <form #quizForm="ngForm" (ngSubmit)="submitQuiz(quizForm.form);">
+      <div class="modal-body d-flex flex-column mb-1">
+        <div *ngFor="let quizQ of quiz; let i=index" class="p-1">
+          <span class="font-weight-bold">{{i+1}}. {{quizQ.question}}</span>
+          <div class="d-flex flex-column question">
+            <label *ngFor="let question of quizQ.options; let j=index">
+              <input type="radio" name="question{{i+1}}" value="{{j+1}}" ngModel>
+              {{question}}
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer justify-content-center bg-light">
+        <button class="btn btn-warning" type="submit" (click)="modalRef.hide()">Zobacz wynik</button>
+      </div>
+    </form>
+  </ng-template>
+</div>

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
     <a routerLink="/">
       <img class="logo" src="/assets/logo.png" alt="Logo">
@@ -9,19 +9,19 @@
     <div class="collapse navbar-collapse" [collapse]="isCollapsed" id="navbarSupportedContent">
       <ul class="navbar-nav align-items-center ml-auto">
         <li class="nav-item m-1">
-          <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+          <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="isCollapsed=true">Home</a>
         </li>
         <li class="nav-item m-1">
-          <a class="nav-link" routerLink="/speakers" routerLinkActive="active">Prelegenci</a>
+          <a class="nav-link" routerLink="/speakers" routerLinkActive="active" (click)="isCollapsed=true">Prelegenci</a>
         </li>
         <li class="nav-item m-1">
-          <a class="nav-link" routerLink="/venue" routerLinkActive="active">Miejsce</a>
+          <a class="nav-link" routerLink="/venue" routerLinkActive="active" (click)="isCollapsed=true">Miejsce</a>
         </li>
         <li class="nav-item m-1">
-          <a class="nav-link" routerLink="/schedule" routerLinkActive="active">Agenda</a>
+          <a class="nav-link" routerLink="/schedule" routerLinkActive="active" (click)="isCollapsed=true">Agenda</a>
         </li>
         <li class="nav-item m-1">
-          <button type="button" class="nav-link btn btn-warning py-2 px-3" routerLink="/register" routerLinkActive="active">Zapisz się</button>
+          <button type="button" class="nav-link btn btn-warning py-2 px-3" routerLink="/register" routerLinkActive="active" (click)="isCollapsed=true">KUP BILET</button>
         </li>
       </ul>
     </div>

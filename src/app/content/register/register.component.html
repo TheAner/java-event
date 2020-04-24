@@ -1,1 +1,42 @@
-<p>register works!</p>
+<div class="d-md-flex flex-row justify-content-start p-5">
+  <div class="m-2 col-md-6 align-self-center">
+    <h1 class="display-4">Zapisz się już teraz</h1>
+    <h2 class="lead p-2">tylko za 50zł/os.</h2>
+  </div>
+  <div class="p-2 col-md-6">
+    <form>
+      <div class="form-group">
+        <label for="name">Imię i nazwisko</label>
+        <input type="text" class="form-control" id="name" placeholder="Jan Kowalski" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="name@example.com" valid required>
+      </div>
+      <div class="form-group">
+        <label for="state">Status</label>
+        <select class="form-control" id="state">
+          <option>Student (-30%)</option>
+          <option>Bez pracy</option>
+          <option selected>Pracujący</option>
+          <option>Pracodawca</option>
+        </select>
+      </div>
+      <div class="form-group col-md-3 pl-0">
+        <label for="notickets">Ilość biletów</label>
+        <select class="form-control" id="notickets">
+          <option selected>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">KUP TERAZ</button>
+    </form>
+  </div>
+</div>
