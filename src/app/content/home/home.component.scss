@@ -1,12 +1,16 @@
 .fixed-text {
   position: absolute;
-  top: 25%;
+  top: 10%;
   color: whitesmoke;
   text-shadow: 0 0 4px black;
   text-align: center;
   margin: 0 auto;
   left: 0;
   right: 0;
+
+  @media (min-width: 768px) {
+    top: 20%;
+  }
 }
 
 .text-container {
