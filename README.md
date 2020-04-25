@@ -11,7 +11,7 @@ Time spend on that ugly page: 1.5d
 Adrian Sowiński (**TheAner**) - s20603
 
 ## Demo
-Demo is running [here](https://project.theaner.pl)
+Demo is running [here](https://projects.theaner.pl)
 
 ## Development server
 
