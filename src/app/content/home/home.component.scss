@@ -7,6 +7,10 @@
   margin: 0 auto;
   left: 0;
   right: 0;
+  -moz-transition: top 1s ease;
+  -webkit-transition: top 1s ease;
+  -o-transition: top 1s ease;
+  transition: top 1s ease;
 
   @media (min-width: 768px) {
     top: 20%;
@@ -20,6 +24,11 @@
   position: relative;
   height: calc(100vh - 113px);
   width: 100%;
+
+  -moz-transition: height 1s ease;
+  -webkit-transition: height 1s ease;
+  -o-transition: height 1s ease;
+  transition: height 1s ease;
 }
 
 p.description{
