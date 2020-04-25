@@ -4,6 +4,8 @@ This project is Angular web application created for PJATK SSW pass.\
 The topic of this site is ***java event***.\
 Angular is used only to **flex**
 
+Time spend on that ugly page: 1.5d
+
 
 ##Author
 Adrian Sowiński (**TheAner**) - s20603
