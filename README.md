@@ -7,7 +7,7 @@ Angular is used only to **flex**
 Time spend on that ugly page: 1.5d
 
 
-##Author
+## Author
 Adrian Sowiński (**TheAner**) - s20603
 
 ## Demo
